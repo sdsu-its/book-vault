@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Instalation](chapter1.md)
+* [Installation](installation.md)
 * [Configure Vault](configure-vault.md)
 
