@@ -4,6 +4,8 @@ Before we can install and initialize the vault, we need to install and setup the
 
 We will create an init script in `/etc/init.d` and register it so that the Consul service starts when the server boots. [View the Script.](/consul.txt)
 
+Make the script executable via: `sudo chmod +x consul`
+
 Register the script via: `sudo update-rc.d consul defaults`
 
 You are now ready to install the Vault.
@@ -25,6 +27,8 @@ listener "tcp" {
  tls_disable = 1
 }
 ```
+
+Make the script executable via: `sudo chmod +x vault`
 
 Register the script via: `sudo update-rc.d vault defaults`
 
