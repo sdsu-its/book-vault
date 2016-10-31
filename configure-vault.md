@@ -4,3 +4,9 @@ Once you have installed and configured the Start Up scripts for both Vault and C
 
 You are only able to call vault init once on a brand new instance. Vault will initialize, generate encryption keys, and root tokens, and prints out a set of 5 keys and a root token, **SAVE THEM**! Whenever you restart the Vault, or seal the vault, you will need 3 of the encryption keys to unseal the vault. This is to ensure that a single malicious individual cannot access the vault. Vault recommends that you encrypt \(via PGP\/[Keybase](https://keybase.io/)\) and distribute the keys to 5 different individuals, three of which would be needed to unlock the vault.
 
+
+
+# Configure TSL
+
+By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ensure the security of our secrets when we access them via the API, we want to encrypt the traffic between our API Client and the Vault Server.
+
