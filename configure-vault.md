@@ -10,3 +10,7 @@ You are only able to call vault init once on a brand new instance. Vault will in
 
 By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ensure the security of our secrets when we access them via the API, we want to encrypt the traffic between our API Client and the Vault Server. To enable TSL, we will need to generate a CA Certificate and a Key for Vault to use when it starts.
 
+
+# Configure Users
+
+Using tokens is annoying, would it not be simpler to use a username/password combination? Conveniently, Vault supports this feature nativity. To enable, run `vault auth-enable userpass` on your unsealed vault. 
