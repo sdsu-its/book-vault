@@ -13,4 +13,8 @@ By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ens
 
 # Configure Users
 
-Using tokens is annoying, would it not be simpler to use a username/password combination? Conveniently, Vault supports this feature nativity. To enable, run `vault auth-enable userpass` on your unsealed vault. 
+Using tokens is annoying, would it not be simpler to use a username/password combination? Conveniently, Vault supports this feature nativity. To enable, run `vault auth-enable userpass` on your unsealed vault. You can then create new users via the following command, with the respective [Access Policy](access_control.md): ```
+vault write auth/userpass/users/mitchellh \
+    password=foo \
+    policies=admins
+    ```.
