@@ -6,12 +6,12 @@ We will need to create an init script in `/etc/init.d` and register it as well. 
 
 ```
 backend "file" {
-path = "/etc/vault/data"
+ path = "/etc/vault/data"
 }
 
 listener "tcp" {
-address = "127.0.0.1:8200"
-tls_disable = 0
+ address = "127.0.0.1:8200"
+ tls_disable = 1
 }
 ```
 
