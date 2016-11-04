@@ -32,4 +32,19 @@ vault write auth/userpass/users/username \
 
 # Configure Apps
 
-First, we will need to enable "AppRoles" which will allow our apps to authenticate themselves with the Vault. To do this we run `vault auth-enable approle`.
+First, we will need to enable "AppRoles" which will allow our apps to authenticate themselves with the Vault. To do this we run `vault auth-enable approle`. Now, we will create as many "AppRoles" as we need. Use the line below as a staring point for your AppRole Creation command:
+```
+vault write auth/approle/role/role-name policies=app token_ttl=1200
+```
+
+This will create the role, to get the role-id, enter the following command with the `role-name` from the above statement:
+```
+vault read auth/approle/role/role-name/role-id
+```
+
+We will be using AppRoles in Push mode to simplify the API process, which requires us to have the server set the Secret-id ahead of time. Use the following command to do this:
+```
+vault write -f auth/approle/role/role-name/secret-id
+```
+Make note of both the role-id and the secret-id as both will be needed by the app to request an access token with the previously mentioned policy.
+
