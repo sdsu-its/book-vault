@@ -18,3 +18,5 @@ tls_disable = 0
 Make the script executable via: `sudo chmod +x vault`
 
 Register the script via: `sudo update-rc.d vault defaults`
+
+Once you have finished the instalation and configuration, you will go back and edit the tcp listner to allow it to bind to a public ip, if desired, to allow outside requests to your vault.
