@@ -1,7 +1,1 @@
-{
-    "plugins": [
-        "-theme-official",
-        "theme-synapse"
-    ],
-    "pluginsConfig": {}
-}
+{}
