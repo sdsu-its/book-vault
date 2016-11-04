@@ -6,10 +6,16 @@ You are only able to call `vault init` once on a brand new instance. Vault will 
 
 # Configure TSL
 
-By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ensure the security of our secrets when we access them via the API, we want to encrypt the traffic between our API Client and the Vault Server. To enable TSL, we will need to generate a CA Certificate and a Key for Vault to use when it starts.
+By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ensure the security of our secrets when we access them via the API, we want to encrypt the traffic between our API Client and the Vault Server. You can either use a Certificate/Key set that you already have provisioned for your machine, provided that you use the servers FQDN in your `VAULT_ADDR` environment variable. You may need to add the Root CA to your machine's trusted CA list, which will vary by OS. If you would like to generate your own CA and Certificate/Key pair, Sam Dunne has a great tutorial: [http://dunne.io/vault-and-self-signed-ssl-certificates](http://dunne.io/vault-and-self-signed-ssl-certificates).
+
+In the end, your TCP listener should look something like the following, with the paths and file names adjusted for your specific `crt` and `key`. If you are comfortable at this point, you can expose your server publicly, by replacing `127.0.0.1` with your public IP. Note, that you will not be able to access the server via localhost, unless you have re-configured your hosts file.
 
 ```
-// TODO Finish this section
+listener "tcp" {
+ address = "127.0.0.1:8200"
+ tls_cert_file= "/etc/vault/ssl/vault.crt",
+ tls_key_file="/etc/vault/ssl/vault.key"
+}
 ```
 
 # Configure Users
