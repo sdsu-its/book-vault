@@ -24,3 +24,6 @@ vault write auth/userpass/users/username \
 ```
 
 
+# Configure Apps
+
+First, we will need to enable "AppRoles" which will allow our apps to authenticate themselves with the Vault. To do this we run `vault auth-enable approle`.
