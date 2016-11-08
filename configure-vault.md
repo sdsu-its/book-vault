@@ -42,3 +42,6 @@ vault write -f auth/approle/role/role-name/secret-id
 ```
 Make note of both the role-id and the secret-id as both will be needed by the app to request an access token with the previously mentioned policy.
 
+## Provisioning Automation
+If you want to speed up this process, you can use a shell script, which can be found on [BitBucket](https://bitbucket.org/snippets/sdsu-its/yyrE5), which takes the app name and ACL Policy as command line arguments and prints out the role and secret ID.
+
