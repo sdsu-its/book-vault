@@ -1,4 +1,4 @@
-# Configure TSL {#tsl}
+# Configure TLS {#tls}
 
 By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ensure the security of our secrets when we access them via the API, we want to encrypt the traffic between our API Client and the Vault Server. You can either use a Certificate/Key set that you already have provisioned for your machine, provided that you use the servers FQDN in your `VAULT_ADDR` environment variable. You may need to add the Root CA to your machine's trusted CA list, which will vary by OS. If you would like to generate your own CA and Certificate/Key pair, Sam Dunne has a great tutorial: [http://dunne.io/vault-and-self-signed-ssl-certificates](http://dunne.io/vault-and-self-signed-ssl-certificates).
 
