@@ -6,7 +6,7 @@ The Policies can be stored wherever, as the need to be loaded into the Vault bef
 
 `vault policy-write policy-name acl.hcl`
 
-Some of the ACLs that we use are listed below for your reference, and a more substantial list can be found in the [Vault Documentation](https://www.vaultproject.io/docs/concepts/policies.html).
+Some of the ACLs that we use are listed below for your reference, and a more detailed list can be found in the [Vault Documentation](https://www.vaultproject.io/docs/concepts/policies.html).
 
 ## Sample ACLs
 ### Admin
