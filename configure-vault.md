@@ -1,4 +1,4 @@
-# Configure TSL
+# Configure TSL {#tsl}
 
 By default, TSL \(HTTPS\) is disabled for simplicity; however, if we want to ensure the security of our secrets when we access them via the API, we want to encrypt the traffic between our API Client and the Vault Server. You can either use a Certificate/Key set that you already have provisioned for your machine, provided that you use the servers FQDN in your `VAULT_ADDR` environment variable. You may need to add the Root CA to your machine's trusted CA list, which will vary by OS. If you would like to generate your own CA and Certificate/Key pair, Sam Dunne has a great tutorial: [http://dunne.io/vault-and-self-signed-ssl-certificates](http://dunne.io/vault-and-self-signed-ssl-certificates).
 
@@ -12,7 +12,7 @@ listener "tcp" {
 }
 ```
 
-# Configure Users
+# Configure Users {#users}
 
 Using tokens is annoying, would it not be simpler to use a username/password combination? Conveniently, Vault supports this feature nativity. To enable, run `vault auth-enable userpass` on your unsealed vault. You can then create new users via the following command, with the respective [Access Policy](/access_control.md): 
 
@@ -24,7 +24,7 @@ vault write auth/userpass/users/username \
 ```
 
 
-# Configure Apps
+# Configure Apps {#apps}
 
 First, we will need to enable "AppRoles" which will allow our apps to authenticate themselves with the Vault. To do this we run `vault auth-enable approle`. Now, we will create as many "AppRoles" as we need. Use the line below as a staring point for your AppRole Creation command:
 ```
