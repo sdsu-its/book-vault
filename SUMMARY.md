@@ -10,6 +10,6 @@
   * [Users](configure-vault.md#users)
   * [Apps](configure-vault.md#apps)
 * [Access Control](access_control.md)
-  * [Example ACLs](access_control.md#examples)
+  * [Example ACLs](access_control.md#sample-acls)
 * [Additional Resources](additional_resources.md)
 
