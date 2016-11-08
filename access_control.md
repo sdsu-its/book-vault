@@ -8,7 +8,7 @@ The Policies can be stored wherever, as the need to be loaded into the Vault bef
 
 Some of the ACLs that we use are listed below for your reference, and a more detailed list can be found in the [Vault Documentation](https://www.vaultproject.io/docs/concepts/policies.html).
 
-## Sample ACLs {#examples}
+## Sample ACLs
 ### Admin
 ```
 path "secret/*" {
