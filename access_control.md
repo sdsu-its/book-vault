@@ -18,6 +18,10 @@ path "secret/*" {
 path "sys/*" {
   policy = "sudo"
 }
+
+path "auth/*" {
+  policy = "sudo"
+}
 ```
 
 ### User
