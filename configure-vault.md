@@ -23,6 +23,18 @@ vault write auth/userpass/users/username \
 
 ```
 
+To login, use the following command, be sure to substitute in your username in the command.
+
+```
+vault auth -method=userpass username=username
+```
+
+To change your password, use the following command, subsituting in your username and desired new password.
+
+```
+vault write auth/userpass/users/username password=password
+```
+
 
 # Configure Apps {#apps}
 
