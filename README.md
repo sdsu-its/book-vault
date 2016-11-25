@@ -1,4 +1,4 @@
-# Vault Installation,Configuration & Management
+# Vault Installation, Configuration & Management
 
 
 With the advent of GIT based CI systems, there is a need for a secure place to store application configuration parameters outside of the application. Vault is a service that allows for Secrets to be stored outside of the application, and then retrieved through a variety of authentication methods. The Vault can be accessed via the CLI or its HTTP REST interface. If you want to use the CLI, use the preliminary installation instructions below.
