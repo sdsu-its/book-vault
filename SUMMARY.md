@@ -11,5 +11,6 @@
   * [Apps](configure-vault.md#apps)
 * [Access Control](access_control.md)
   * [Example ACLs](access_control.md#sample-acls)
+* [Adding a UI](adding-a-ui.md)
 * [Additional Resources](additional_resources.md)
 
