@@ -11,9 +11,10 @@
             ]
         },
         "download-pdf-link": {
-        "base": "https://www.gitbook.com/book/sdsu-its/video-inventory/",
+        "base": "https://www.gitbook.com/book/sdsu-its/vault/",
         "label": {
-            "en": "Download PDF",
+            "en": "Download PDF"
+        }
       }
     }
 }
