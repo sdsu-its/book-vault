@@ -1,4 +1,14 @@
 {
-    "plugins": [],
-    "pluginsConfig": {}
+    "plugins": [ "download-pdf-link", "alerts" ],
+    "pluginsConfig": {
+        "sharing": {
+            "facebook": false,
+            "twitter": false,
+            "google": false,
+            "instapaper": false,
+            "all": [
+                "facebook", "google", "twitter", "instapaper"
+            ]
+        }
+    }
 }
