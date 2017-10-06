@@ -9,6 +9,11 @@
             "all": [
                 "facebook", "google", "twitter", "instapaper"
             ]
-        }
+        },
+        "download-pdf-link": {
+        "base": "https://www.gitbook.com/book/sdsu-its/video-inventory/",
+        "label": {
+            "en": "Download PDF",
+      }
     }
 }
