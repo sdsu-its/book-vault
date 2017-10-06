@@ -11,10 +11,7 @@
             ]
         },
         "download-pdf-link": {
-        "base": "https://www.gitbook.com/book/sdsu-its/vault/",
-        "label": {
-            "en": "Download PDF"
-        }
+        "base": "https://www.gitbook.com/book/sdsu-its/vault/"
       }
     }
 }

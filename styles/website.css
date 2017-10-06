@@ -1,12 +1,12 @@
 body, .book .book-header, .book .book-summary, .book .book-body {
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  background-color: #E1E1E1;
+  background-color: #FEFEFE;
   font-weight: 200;
 }
 
 .markdown-section * {
-  /* ITS Medium Gray */
-  color: #AFAFAF;
+  /* ITS Black */
+  color: #E1E1E1;
 }
 .markdown-section h1 {
   /* Black - Bold*/
