@@ -3,14 +3,16 @@ body, .book .book-header, .book .book-summary, .book .book-body {
   background-color: #FEFEFE;
   font-weight: 200;
 }
-
 .markdown-section * {
   /* ITS Black */
-  color: #E1E1E1;
+  color: #202020;
+}
+.markdown-section p {
+  font-size: 1.75rem
 }
 .markdown-section h1 {
   /* Black - Bold*/
-  color: #E1E1E1;
+  color: #202020;
   font-weight: 700;
 }
 .markdown-section h2 {
@@ -18,13 +20,17 @@ body, .book .book-header, .book .book-summary, .book .book-body {
   color: #C41230;
   font-weight: 700;
 }
-.markdown-section h3, .markdown-section h4, .markdown-section h5 {
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5 {
   /* ITS Dark Gray*/
-  color: #969696;
+  color: #505050;
 }
 .markdown-section a {
-  color:  #AFAFAF;
+  /* ITS Red*/
+  color:  #C41230;
 }
 .markdown-section a:hover {
-  color:  #969696;
+  /* Darker Shade of ITS Red*/
+  color:  #AA102A;
 }

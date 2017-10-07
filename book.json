@@ -1,17 +1,23 @@
 {
-    "plugins": [ "download-pdf-link", "alerts" ],
-    "pluginsConfig": {
-        "sharing": {
-            "facebook": false,
-            "twitter": false,
-            "google": false,
-            "instapaper": false,
-            "all": [
-                "facebook", "google", "twitter", "instapaper"
-            ]
-        },
-        "download-pdf-link": {
-        "base": "https://www.gitbook.com/book/sdsu-its/vault/"
-      }
+  "plugins": [
+    "download-pdf-link",
+    "alerts"
+  ],
+  "pluginsConfig": {
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "instapaper": false,
+      "all": [
+        "facebook",
+        "google",
+        "twitter",
+        "instapaper"
+      ]
+    },
+    "download-pdf-link": {
+      "base": "https://www.gitbook.com/book/sdsu-its/vault/"
     }
+  }
 }
