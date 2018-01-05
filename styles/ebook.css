@@ -34,3 +34,13 @@ body, .book .book-header, .book .book-summary, .book .book-body {
   /* Darker Shade of ITS Red*/
   color:  #AA102A;
 }
+.markdown-section> :first-child::before {
+    content: "";
+    background-image: url("./header-logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 2.25em;
+    margin-bottom: 2rem;
+    display: block;
+    border-bottom: 2px solid #505050;
+}
