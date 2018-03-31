@@ -1,4 +1,4 @@
-# Adding a User Interface
+# Adding a UI
 
 While the Vault CLI is incredibly powerful and useful, a WebUI can make administering your secrets a little easier. [DJ Enriquez](https://github.com/djenriquez) has written a beautiful, lightweight interface for the Vault. It has been conveniently packaged into a Docker Container, which can quickly and easily be created to make managing your Vault easily.
 
@@ -16,11 +16,7 @@ docker create --name vault-ui \
     djenriquez/vault-ui
 ```
 
-
-
 Once you have created and started your container, you can navigate to port 8000 on the machine that you have spun up your container \(provided that your have opened the port on your firewall, etc.\)
 
-![](/assets/Screen Shot 2017-02-06 at 7.26.17 PM.png)
-
-
+![](.gitbook/assets/screen-shot-2017-02-06-at-7.26.17-pm.png)
 
